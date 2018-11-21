@@ -1,12 +1,12 @@
-package indomaret.sftp;
+package ftps.test;
 
 import org.apache.commons.net.ftp.FTPFile;
 import org.apache.commons.net.ftp.FTPSClient;
-import javax.net.ssl.TrustManager;
+
 import java.io.FileOutputStream;
 import java.io.OutputStream;
 
-public class TestSftp {
+public class TestFtps {
 
     public static void main(String[] args) {
         try {
@@ -18,7 +18,7 @@ public class TestSftp {
                 System.out.println("Connected");
             ftpsClient.login("uer", "password");
 
-            ftpsClient.changeWorkingDirectory("FileRekonsiliasi");
+            ftpsClient.changeWorkingDirectory("server/files/directory/");
             System.out.println(ftpsClient.printWorkingDirectory());
             ftpsClient.enterLocalPassiveMode();
 

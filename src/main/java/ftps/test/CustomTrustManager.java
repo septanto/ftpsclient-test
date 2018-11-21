@@ -1,4 +1,4 @@
-package indomaret.sftp;
+package ftps.test;
 
 import javax.net.ssl.SSLEngine;
 import javax.net.ssl.X509ExtendedTrustManager;
